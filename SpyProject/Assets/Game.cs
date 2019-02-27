@@ -74,7 +74,7 @@ public class Game : MonoBehaviour {
     }
 
     private void ApplyChanges(string message, State change) {
-        ResultDescription.text = message + " " + ChangeResources(change);
+        ResultDescription.text = message + "\n\n " + ChangeResources(change);
         state.Peoples += change.Peoples;
         state.Ammunition += change.Ammunition;
         state.Money += change.Money;
